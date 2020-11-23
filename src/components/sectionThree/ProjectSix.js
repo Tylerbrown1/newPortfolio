@@ -11,12 +11,12 @@ const MainDiv = styled.div`
 
 const ContentDiv = styled.div`
   flex: 1;
-  padding-right: 1rem;
+  padding-left: 1rem;
 `;
 
 const ImgDiv = styled.div`
   flex: 1;
-  background-image: url("/flowers.jpg");
+  background-image: url("/prominent.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -26,6 +26,7 @@ const ImgDiv = styled.div`
 const ProjectOne = () => {
   return (
     <MainDiv>
+      <ImgDiv></ImgDiv>
       <ContentDiv>
         <h3>FullStack Dashboard (Coding Challenge)</h3>
         <h5>
@@ -43,7 +44,6 @@ const ProjectOne = () => {
           <button>Github</button>
         </div>
       </ContentDiv>
-      <ImgDiv></ImgDiv>
     </MainDiv>
   );
 };

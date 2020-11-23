@@ -16,7 +16,7 @@ const ContentDiv = styled.div`
 
 const ImgDiv = styled.div`
   flex: 1;
-  background-image: url("/flowers.jpg");
+  background-image: url("/framer (1).jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -40,6 +40,7 @@ const ProjectOne = () => {
           navigate and sort.
         </p>
         <div>
+          <button>Live</button>
           <button>Github</button>
         </div>
       </ContentDiv>

@@ -16,7 +16,7 @@ const ContentDiv = styled.div`
 
 const ImgDiv = styled.div`
   flex: 1;
-  background-image: url("/fullStack.jpg");
+  background-image: url("/flowers.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;

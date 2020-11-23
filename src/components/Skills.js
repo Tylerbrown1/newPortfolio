@@ -29,7 +29,7 @@ const Skills = () => {
         <SkillP>Node</SkillP>
         <SkillP>SQL</SkillP>
         <SkillP>Figma</SkillP>
-        <SkillP>GASP</SkillP>
+        <SkillP>GSAP</SkillP>
       </div>
       <div>
         <SkillP>MondgoDB</SkillP>

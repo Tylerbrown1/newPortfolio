@@ -2,10 +2,11 @@
 
 import React from "react";
 import styled from "styled-components";
+import Button from "@material-ui/core/Button";
 
 const MainDiv = styled.div`
   display: flex;
-  height: 50vh;
+  height: 60vh;
   padding: 2rem 0 2rem 0;
 `;
 
@@ -27,12 +28,14 @@ const ProjectOne = () => {
   return (
     <MainDiv>
       <ContentDiv>
-        <h3>FullStack Dashboard (Coding Challenge)</h3>
-        <h5>
+        <h2 style={{ color: "#f2cc8f" }}>
+          FullStack Dashboard (Coding Challenge)
+        </h2>
+        <h5 style={{ color: "#fff" }}>
           Technologies used: Python, Django, Postgres, HTML, CSS(Styled
           Components), React, Redux
         </h5>
-        <p>
+        <p style={{ color: "#fff" }}>
           I was given two weeks to build a full stack dashboard using a specific
           style guide. I built a production level authentication and
           authorization that requires email verification. The Dash board fetches
@@ -40,8 +43,17 @@ const ProjectOne = () => {
           navigate and sort.
         </p>
         <div>
-          <button>Live</button>
-          <button>Github</button>
+          <Button
+            variant="contained"
+            style={{
+              backgroundColor: "#f2cc8f",
+              color: "#fff",
+              margin: "0 1rem 0 0",
+            }}
+          >
+            Live
+          </Button>
+          <Button variant="outlined">Github</Button>
         </div>
       </ContentDiv>
       <ImgDiv></ImgDiv>

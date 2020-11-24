@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const MainDiv = styled.div`
   display: flex;
-  height: 50vh;
+  height: 60vh;
   padding: 2rem 0 2rem 0;
 `;
 

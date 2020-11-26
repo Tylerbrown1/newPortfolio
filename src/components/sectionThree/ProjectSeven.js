@@ -5,44 +5,33 @@ import styled from "styled-components";
 
 const MainDiv = styled.div`
   display: flex;
-  height: 50vh;
+  height: 60vh;
   padding: 2rem 0 2rem 0;
 `;
 
 const ContentDiv = styled.div`
   flex: 1;
   padding-right: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 `;
 
 const ImgDiv = styled.div`
   flex: 1;
   background-image: url("/lasteak.jpg");
   background-position: center;
-  background-size: cover;
-  width: 100%;
-  border-radius: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 
 const ProjectOne = () => {
   return (
     <MainDiv>
       <ContentDiv>
-        <h3>FullStack Dashboard (Coding Challenge)</h3>
-        <h5>
-          Technologies used: Python, Django, Postgres, HTML, CSS(Styled
-          Components), React, Redux
-        </h5>
-        <p>
-          I was given two weeks to build a full stack dashboard using a specific
-          style guide. I built a production level authentication and
-          authorization that requires email verification. The Dash board fetches
-          data from the database and displays it in tables that is easy to
-          navigate and sort.
-        </p>
-        <div>
-          <button>Live</button>
-          <button>Github</button>
-        </div>
+        <h2 style={{ color: "#f2cc8f" }}>La Steak</h2>
+        <h5 style={{ color: "#fff" }}>Technologies used: Webflow</h5>
+        <p style={{ color: "#fff" }}>A local steak house website.</p>
       </ContentDiv>
       <ImgDiv></ImgDiv>
     </MainDiv>

@@ -8,6 +8,10 @@ const MainDiv = styled.div`
   display: flex;
   height: 60vh;
   padding: 2rem 0 2rem 0;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 const ContentDiv = styled.div`
@@ -24,6 +28,10 @@ const ImgDiv = styled.div`
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media (max-width: 960px) {
+    margin-top: 1rem;
+  }
 `;
 
 const ProjectOne = () => {

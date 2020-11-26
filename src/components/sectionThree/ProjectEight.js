@@ -2,25 +2,29 @@
 
 import React from "react";
 import styled from "styled-components";
+import Button from "@material-ui/core/Button";
 
 const MainDiv = styled.div`
   display: flex;
-  height: 50vh;
+  height: 60vh;
   padding: 2rem 0 2rem 0;
 `;
 
 const ContentDiv = styled.div`
   flex: 1;
   padding-left: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 `;
 
 const ImgDiv = styled.div`
   flex: 1;
   background-image: url("/weather.PNG");
   background-position: center;
-  background-size: cover;
-  width: 100%;
-  border-radius: 1rem;
+
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 
 const ProjectOne = () => {
@@ -28,21 +32,25 @@ const ProjectOne = () => {
     <MainDiv>
       <ImgDiv></ImgDiv>
       <ContentDiv>
-        <h3>FullStack Dashboard (Coding Challenge)</h3>
-        <h5>
-          Technologies used: Python, Django, Postgres, HTML, CSS(Styled
-          Components), React, Redux
+        <h2 style={{ color: "#f2cc8f" }}>Weather API and to-do list</h2>
+        <h5 style={{ color: "#fff" }}>
+          Technologies used: HTML, CSS(Styled Components), React
         </h5>
-        <p>
-          I was given two weeks to build a full stack dashboard using a specific
-          style guide. I built a production level authentication and
-          authorization that requires email verification. The Dash board fetches
-          data from the database and displays it in tables that is easy to
-          navigate and sort.
+        <p style={{ color: "#fff" }}>
+          I was took a weather api and made an application that changes the
+          weather and location depending on where the user searches. I also have
+          a to-do list with CRUD functionality.
         </p>
         <div>
-          <button>Live</button>
-          <button>Github</button>
+          <Button
+            variant="contained"
+            style={{
+              backgroundColor: "#f2cc8f",
+              color: "#fff",
+            }}
+          >
+            Github
+          </Button>
         </div>
       </ContentDiv>
     </MainDiv>

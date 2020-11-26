@@ -5,22 +5,24 @@ import styled from "styled-components";
 
 const MainDiv = styled.div`
   display: flex;
-  height: 50vh;
+  height: 60vh;
   padding: 2rem 0 2rem 0;
 `;
 
 const ContentDiv = styled.div`
   flex: 1;
   padding-left: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 `;
 
 const ImgDiv = styled.div`
   flex: 1;
   background-image: url("/prominent.jpg");
   background-position: center;
-  background-size: cover;
-  width: 100%;
-  border-radius: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 
 const ProjectOne = () => {
@@ -28,21 +30,13 @@ const ProjectOne = () => {
     <MainDiv>
       <ImgDiv></ImgDiv>
       <ContentDiv>
-        <h3>FullStack Dashboard (Coding Challenge)</h3>
-        <h5>
-          Technologies used: Python, Django, Postgres, HTML, CSS(Styled
-          Components), React, Redux
-        </h5>
-        <p>
-          I was given two weeks to build a full stack dashboard using a specific
-          style guide. I built a production level authentication and
-          authorization that requires email verification. The Dash board fetches
-          data from the database and displays it in tables that is easy to
-          navigate and sort.
+        <h2 style={{ color: "#f2cc8f" }}>Prominent Limousine</h2>
+        <h5 style={{ color: "#fff" }}>Technologies used: Webflow</h5>
+        <p style={{ color: "#fff" }}>
+          The friend I was working with wanted something they could easily use
+          and maintain. The solution was webflow. I did all the HTML and CSS and
+          showed him how to upload new pictures and adjust colors/text.
         </p>
-        <div>
-          <button>Github</button>
-        </div>
       </ContentDiv>
     </MainDiv>
   );

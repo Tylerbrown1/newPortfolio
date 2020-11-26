@@ -13,14 +13,17 @@ const MainDiv = styled.div`
 const ContentDiv = styled.div`
   flex: 1;
   padding-left: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 `;
 
 const ImgDiv = styled.div`
   flex: 1;
   background-image: url("/lux.jpg");
   background-position: center;
-  background-size: cover;
-
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 1rem;
 `;
 

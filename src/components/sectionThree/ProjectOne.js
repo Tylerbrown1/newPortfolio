@@ -13,15 +13,17 @@ const MainDiv = styled.div`
 const ContentDiv = styled.div`
   flex: 1;
   padding-right: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 `;
 
 const ImgDiv = styled.div`
   flex: 1;
   background-image: url("/fullStack.jpg");
   background-position: center;
-  background-size: cover;
-  width: 100%;
-  border-radius: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 
 const ProjectOne = () => {
